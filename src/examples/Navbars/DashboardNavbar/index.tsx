@@ -22,14 +22,14 @@ import {
   setTransparentNavbar,
   setMiniSidenav,
 } from "context";
-import { useAuth } from "shared/hooks/useAuth";
-import useTranslate from "shared/hooks/useTranslate";
+// import { useAuth } from "shared/hooks/useAuth";
+// import useTranslate from "shared/hooks/useTranslate";
 import useLocales from "shared/hooks/useLocales";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 function DashboardNavbar({ absolute = false, light = false, isMini = false }) {
-  const { logout } = useAuth();
-  const { t } = useTranslate();
+  // const { logout } = useAuth();
+  // const { t } = useTranslate();
   const [navbarType, setNavbarType] = useState<"sticky" | "static">("static");
   const [controller, dispatch] = useMaterialUIController();
   const {
@@ -40,7 +40,7 @@ function DashboardNavbar({ absolute = false, light = false, isMini = false }) {
   } = controller;
   const { isRTL } = useLocales();
   const [openMenu, setOpenMenu] = useState<HTMLElement | null>(null);
-  const [settingsAnchorEl, setSettingsAnchorEl] = useState<HTMLElement | null>(null);
+  // const [settingsAnchorEl, setSettingsAnchorEl] = useState<HTMLElement | null>(null);
   const route = useLocation().pathname.split("/").slice(1);
 
   useEffect(() => {
@@ -72,12 +72,12 @@ function DashboardNavbar({ absolute = false, light = false, isMini = false }) {
 
   const handleMiniSidenav = () => setMiniSidenav(dispatch, !miniSidenav);
   const handleCloseMenu = () => setOpenMenu(null);
-  const handleOpenSettingsMenu = (event) => {
-    setSettingsAnchorEl(event.currentTarget);
-  };
-  const handleCloseSettingsMenu = () => {
-    setSettingsAnchorEl(null);
-  };
+  // const handleOpenSettingsMenu = (event) => {
+  //   setSettingsAnchorEl(event.currentTarget);
+  // };
+  // const handleCloseSettingsMenu = () => {
+  //   setSettingsAnchorEl(null);
+  // };
 
   // Render the notifications menu
   const renderMenu = () => (
@@ -103,28 +103,28 @@ function DashboardNavbar({ absolute = false, light = false, isMini = false }) {
       />
     </Menu>
   );
-  const settingsMenu = () => (
-    <Menu
-      anchorEl={settingsAnchorEl}
-      open={Boolean(settingsAnchorEl)}
-      onClose={handleCloseSettingsMenu}
-      anchorOrigin={{
-        vertical: "bottom",
-        horizontal: isRTL ? "left" : "right",
-      }}
-      transformOrigin={{
-        vertical: "top",
-        horizontal: isRTL ? "left" : "right",
-      }}
-      PaperProps={{ sx: { mt: 0.5 } }}
-    >
-      <NotificationItem
-        onClick={() => logout()}
-        icon={<Icon>logout</Icon>}
-        title={t("common.signOut")}
-      />
-    </Menu>
-  );
+  // const settingsMenu = () => (
+  //   <Menu
+  //     anchorEl={settingsAnchorEl}
+  //     open={Boolean(settingsAnchorEl)}
+  //     onClose={handleCloseSettingsMenu}
+  //     anchorOrigin={{
+  //       vertical: "bottom",
+  //       horizontal: isRTL ? "left" : "right",
+  //     }}
+  //     transformOrigin={{
+  //       vertical: "top",
+  //       horizontal: isRTL ? "left" : "right",
+  //     }}
+  //     PaperProps={{ sx: { mt: 0.5 } }}
+  //   >
+  //     <NotificationItem
+  //       onClick={() => logout()}
+  //       icon={<Icon>logout</Icon>}
+  //       title={t("common.signOut")}
+  //     />
+  //   </Menu>
+  // );
 
   // Styles for the navbar icons
   const iconsStyle = ({
@@ -189,7 +189,7 @@ function DashboardNavbar({ absolute = false, light = false, isMini = false }) {
                 </Icon>
               </IconButton>
               <LanguageSwitcher iconsStyle={iconsStyle} buttonSx={navbarIconButton} />
-              <IconButton
+              {/* <IconButton
                 size="small"
                 disableRipple
                 color="inherit"
@@ -198,7 +198,7 @@ function DashboardNavbar({ absolute = false, light = false, isMini = false }) {
               >
                 <Icon sx={iconsStyle}>settings</Icon>
               </IconButton>
-              {settingsMenu()}
+              {settingsMenu()} */}
               {/* <IconButton
                 size="small"
                 disableRipple
