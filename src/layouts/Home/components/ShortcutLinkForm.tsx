@@ -181,11 +181,12 @@ function ShortcutLinkForm({
             fontWeight: 600,
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
             direction: "inherit",
             gap: 1,
             width: { xs: "100%", sm: "auto" },
-            justifyContent: { xs: "center", sm: "flex-start" },
             minWidth: { sm: 200 },
+            textAlign: "center",
             "&:hover": {
               backgroundColor: "primary.main",
             },
