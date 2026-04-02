@@ -25,6 +25,8 @@ function Home() {
     border: `1px solid ${meena.border || "rgba(140, 86, 255, 0.08)"}`,
   };
 
+  const pageTitle = t("home.title");
+
   const handleCreate = useCallback(async (raw: string) => {
     const result = await createShortLink(raw);
     if (result.ok === true) {
@@ -51,15 +53,17 @@ function Home() {
         }}
       >
         <MDBox sx={{ flex: 1, minHeight: 0, overflowX: "hidden" }}>
-          <MDTypography
-            variant="h4"
-            fontWeight="bold"
-            color="dark"
-            mb={{ xs: 2, sm: 3 }}
-            sx={{ fontSize: { xs: "1.5rem", sm: "1.75rem", md: "2rem" } }}
-          >
-            {t("home.title")}
-          </MDTypography>
+          {pageTitle ? (
+            <MDTypography
+              variant="h4"
+              fontWeight="bold"
+              color="dark"
+              mb={{ xs: 2, sm: 3 }}
+              sx={{ fontSize: { xs: "1.5rem", sm: "1.75rem", md: "2rem" } }}
+            >
+              {pageTitle}
+            </MDTypography>
+          ) : null}
 
           <MDBox sx={{ ...cardStyle, maxWidth: 920, mx: "auto" }}>
             <ShortcutLinkForm
