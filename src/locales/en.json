@@ -1,0 +1,84 @@
+{
+  "common": {
+    "home": "Home",
+    "settings": "Settings",
+    "signOut": "Sign out",
+    "language": "Language",
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "home": {
+    "title": "Meena link shortener",
+    "heroTitle": "Create a short link",
+    "heroDescription": "Paste any long URL below. We will create a compact Meena Health shortcut you can share.",
+    "urlPlaceholder": "https://example.com/your-long-path",
+    "createShortcut": "Create shortcut",
+    "helperText": "",
+    "shortLinkLabel": "Your short link",
+    "copyLink": "Copy link",
+    "copiedToast": "Link copied to clipboard.",
+    "copyFailedToast": "Could not copy — check browser permissions.",
+    "errors": {
+      "required": "Please enter a URL",
+      "invalid": "That does not look like a valid URL",
+      "network": "Something went wrong. Check your connection and try again.",
+      "timeout": "The request took too long. Please try again.",
+      "unexpectedResponse": "We could not read the short link from the server. Try again or contact support."
+    }
+  },
+  "orderFlow": {
+    "progressAria": "Order step progress",
+    "stepMedications": "Medications",
+    "stepYourDetails": "Your details",
+    "stepCheckout": "Checkout",
+    "continueToDetails": "Continue",
+    "continueToCheckout": "Continue to checkout",
+    "backToMedications": "Back to medications",
+    "backToDetails": "Back to your details",
+    "detailsTitle": "Your details",
+    "detailsSectionTitle": "Enter your information",
+    "detailsSectionDescription": "Enter your name, phone, and ID to complete your order.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone number",
+    "idNumber": "National ID",
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalidSaudi": "Mobile number must start with 5 and be a valid Saudi number",
+      "idRequired": "ID number is required",
+      "idDigitsOnly": "Digits only"
+    }
+  },
+  "checkout": {
+    "title": "Checkout",
+    "customerInfo": "Customer Information",
+    "customerInfoSubtitle": "Contact details",
+    "orderSummary": "Order Summary",
+    "items": "items",
+    "total": "Total",
+    "totalPrice": "Total Price",
+    "payNow": "Pay Now",
+    "backToHome": "Back to Home",
+    "emptyCart": "Your cart is empty",
+    "successMessage": "Payment successful! Thank you for your order.",
+    "paymentFailed": "Payment could not be completed. Please try again.",
+    "paymentNotConfigured": "Payment is not configured. Please contact support."
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "welcome": "Welcome back",
+    "description": "Sign in to your account to access the Meena Intranet",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "submit": "Sign in",
+    "brandTitle": "Meena Intranet",
+    "brandTagline": "Your internal platform",
+    "emailInvalid": "Please enter a valid email",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required"
+  }
+}

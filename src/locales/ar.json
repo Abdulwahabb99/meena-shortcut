@@ -1,0 +1,84 @@
+{
+  "common": {
+    "home": "الرئيسية",
+    "settings": "الإعدادات",
+    "signOut": "تسجيل الخروج",
+    "language": "اللغة",
+    "arabic": "العربية",
+    "english": "English"
+  },
+  "home": {
+    "title": "اختصار روابط مينا",
+    "heroTitle": "أنشئ رابطًا مختصرًا",
+    "heroDescription": "الصق أي رابط طويل أدناه. سنُنشئ لك اختصارًا من مينا هيلث يمكنك مشاركته.",
+    "urlPlaceholder": "https://example.com/your-long-path",
+    "createShortcut": "إنشاء الاختصار",
+    "helperText": "",
+    "shortLinkLabel": "رابطك المختصر",
+    "copyLink": "نسخ الرابط",
+    "copiedToast": "تم نسخ الرابط.",
+    "copyFailedToast": "تعذّر النسخ — تحقق من أذونات المتصفح.",
+    "errors": {
+      "required": "يرجى إدخال رابط",
+      "invalid": "هذا لا يبدو رابطًا صالحًا",
+      "network": "حدث خطأ. تحقق من الاتصال وحاول مرة أخرى.",
+      "timeout": "انتهت مهلة الطلب. حاول مرة أخرى.",
+      "unexpectedResponse": "تعذّر قراءة الرابط المختصر من الخادم. حاول مرة أخرى أو تواصل مع الدعم."
+    }
+  },
+  "orderFlow": {
+    "progressAria": "تقدم خطوات الطلب",
+    "stepMedications": "الأدوية",
+    "stepYourDetails": "بياناتك",
+    "stepCheckout": "الدفع",
+    "continueToDetails": "متابعة",
+    "continueToCheckout": "متابعة للدفع",
+    "backToMedications": "العودة للأدوية",
+    "backToDetails": "العودة للبيانات",
+    "detailsTitle": "البيانات الشخصية",
+    "detailsSectionTitle": "أدخل البيانات",
+    "detailsSectionDescription": "أدخل الاسم والهاتف ورقم الهوية لإكمال الطلب.",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "phone": "رقم الهاتف",
+    "idNumber": "رقم الهوية",
+    "errors": {
+      "firstNameRequired": "الاسم الأول مطلوب",
+      "lastNameRequired": "الاسم الأخير مطلوب",
+      "phoneRequired": "رقم الهاتف مطلوب",
+      "phoneInvalidSaudi": "رقم الجوال يجب أن يبدأ بـ 5 وأن يكون رقمًا سعوديًا صحيحًا",
+      "idRequired": "رقم الهوية مطلوب",
+      "idDigitsOnly": "أرقام فقط"
+    }
+  },
+  "checkout": {
+    "title": "الدفع",
+    "customerInfo": "معلومات العميل",
+    "customerInfoSubtitle": "بيانات التواصل",
+    "orderSummary": "ملخص الطلب",
+    "items": "عناصر",
+    "total": "الإجمالي",
+    "totalPrice": "إجمالي السعر",
+    "payNow": "ادفع الآن",
+    "backToHome": "العودة للرئيسية",
+    "emptyCart": "السلة فارغة",
+    "successMessage": "تم الدفع بنجاح! شكراً لطلبك.",
+    "paymentFailed": "تعذّر إتمام الدفع. حاول مرة أخرى.",
+    "paymentNotConfigured": "إعدادات الدفع غير مكتملة. تواصل مع الدعم."
+  },
+  "auth": {
+    "signIn": "تسجيل الدخول",
+    "welcome": "مرحباً بعودتك",
+    "description": "سجّل الدخول إلى حسابك للوصول إلى منصة مينا الداخلية",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "submit": "تسجيل الدخول",
+    "brandTitle": "منصة مينا الداخلية",
+    "brandTagline": "بوابتك الداخلية",
+    "emailInvalid": "من فضلك أدخل بريدًا إلكترونيًا صحيحًا",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "passwordRequired": "كلمة المرور مطلوبة"
+  }
+}
